@@ -40,5 +40,4 @@ build:
     - pip show pycrypto
     - java --version
     - node -version
-    - ruby -v
     - python --version
