@@ -2,24 +2,24 @@ language: none
    
 services:
  # - cassandra 
-  - couchdb 
-  - elasticsearch 
-  - memcached 
-  - mongodb 
-  - mysql 
+  #- couchdb 
+  #- elasticsearch 
+  #- memcached 
+  #- mongodb 
+  #- mysql 
  # - neo4j 
-  - postgres 
-  - rabbitmq 
-  - redis  
-  - riak 
-  - selenium 
-  - sqlite 
-  - openjdk7
-  - openjdk8
-  - openjdk10
-  - openjdk11
-  - oraclejdk8
-  - oraclejdk11
+  #- postgres 
+  #- rabbitmq 
+  #- redis  
+  #- riak 
+  #- selenium 
+  #- sqlite 
+  #- openjdk7
+  #- openjdk8
+  #- openjdk10
+  #- openjdk11
+  #- oraclejdk8
+  #- oraclejdk11
  
   
 build:
