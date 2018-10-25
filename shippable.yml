@@ -14,6 +14,13 @@ services:
   - riak 
   - selenium 
   - sqlite 
+  - openjdk7
+  - openjdk8
+  - openjdk10
+  - openjdk11
+  - oraclejdk8
+  - oraclejdk11
+ 
   
 build:
   pre_ci_boot:
@@ -22,21 +29,23 @@ build:
     pull: true
     
   ci:
-    - psql --version
-    - java -jar /usr/local/selenium/selenium-server-standalone-3.14.0.jar --version
-    - sqlite3 --version
-    - mysql --version
-    - elasticsearch --version
-    - memcached --version
-    - riak version
-    - sudo -i -u couchdb /opt/couchdb/bin/couchdb 2>&1 >/dev/null &
-    - sleep 5
-    - curl http://127.0.0.1:5984/
-    - yum list rabbitmq-server | grep rabbitmq-serve
-    - redis-server --version
-    - mongod --version
+    #- psql --version
+    #- java -jar /usr/local/selenium/selenium-server-standalone-3.14.0.jar --version
+    #- sqlite3 --version
+    #- mysql --version
+    #- elasticsearch --version
+    #- memcached --version
+    #- riak version
+    #- sudo -i -u couchdb /opt/couchdb/bin/couchdb 2>&1 >/dev/null &
+    #- sleep 5
+    #- curl http://127.0.0.1:5984/
+    #- yum list rabbitmq-server | grep rabbitmq-serve
+    #- redis-server --version
+    #- mongod --version
    #- cassandra -v  
    # - /var/lib/neo4j/bin/neo4j version
-    - pip show pycrypto
+    #- pip show pycrypto
     - java --version
+    
+  
 
