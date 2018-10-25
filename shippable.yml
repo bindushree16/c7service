@@ -46,6 +46,12 @@ build:
    # - /var/lib/neo4j/bin/neo4j version
     #- pip show pycrypto
     - java --version
+    - shippable_jdk set openjdk7
+    - shippable_jdk set openjdk8
+    - shippable_jdk set openjdk10
+    - shippable_jdk set openjdk11
+    - shippable_jdk set oraclejdk8
+    - shippable_jdk set oraclejdk11
     
   
 
